@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+<!--  <meta http-equiv="refresh" content="60">-->
+  <title>Dexcom Data</title>
+</head>
+<body>
+  <main>
+    <div id="scroll-snap-container">
+    <div id="circles-view">
+      <div id="circles-top">
+        <p id="trend-arrow"></p>
+      </div>
+      <div id="circles-bottom">
+      <div class="circle" id="circle1"></div>
+      <div class="circle" id="circle2"></div>
+      <div class="circle" id="circle3"></div>
+      <div class="circle" id="circle4"></div>
+      <div class="circle" id="circle5"></div>
+      <div class="circle" id="circle6"></div>
+      <div class="circle" id="circle7"></div>
+      <div class="circle" id="circle8"></div>
+      <div class="circle" id="circle9"></div>
+      <div class="circle" id="circle10"></div>
+      </div>
+    </div>
+    <div id="details-view">
+      <div id="details-left">
+        <canvas id="myChart"></canvas>
+      </div>
+      <div id="details-right">
+        <p id="details-num"></p>
+        <p id="details-trend"></p>
+      </div>
+    </div>
+    <div id="number-view">
+      <span><span id="number"></span><span class="hidden"></span><span id="number-trend-arrow"></span></span>
+    </div>
+    <div id="settings-view">
+        <button onclick="tempMute()">Silence for 1hr</button>
+        <button onclick="testSound()">Test Sound</button>
+        <button onclick="getGlucoseData()">Force Refresh</button>
+        <button onclick="setTarget160()">High Alarm = 160</button>
+        <button onclick="setTarget180()">High Alarm = 180</button>
+        <button onclick="setTarget200()">High Alarm = 200</button>
+<!--        <button id="debugger">25</button>-->
+    </div>
+  </main>
+</body>
+<script src="script.js"></script>
+<script src="chart.js"></script>
+</html>
