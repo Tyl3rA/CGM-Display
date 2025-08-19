@@ -365,6 +365,8 @@ class ArgumentError extends DexcomError {
   }
 }
 
+// END MIT LICENSE CODE, EVERYTHING FROM THIS LINE DOWN IS MY CODE
+
 let glucoseHighTarget = 180
 
 function setTarget160() {
