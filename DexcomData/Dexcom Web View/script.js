@@ -1,3 +1,5 @@
+// First part of this file is under the below MIT license, rest of it is mine. There is a comment at the point where it changes from Brett Farrow's code to my code.
+
 //MIT License
 //
 //Copyright (c) 2023 Brett Farrow
